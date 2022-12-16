@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Main from 'pages/Main';
 import LoginJoin from './pages/LoginJoin';
 import Submain from './pages/Submain';
+import ChatList from './pages/ChatList';
 const GlobalStyle = createGlobalStyle`
   ${reset}
 `;
@@ -24,6 +25,7 @@ function App() {
             {/* <Route path="/" element={<Main />} />
             <Route path="/login" element={<LoginJoin />} /> */}
             <Route path="/" element={<Submain />} />
+            <Route path="/chat" element={<ChatList />} />
           </Routes>
         </BrowserRouter>
       </div>
